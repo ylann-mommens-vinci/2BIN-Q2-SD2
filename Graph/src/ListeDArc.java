@@ -27,7 +27,7 @@ public class ListeDArc extends Graph{
 	@Override
 	// Complexié : O(N)
 	public Set<Flight> arcsSortants(Airport a) {
-		//à compléter
+		//TODO
 		HashSet<Flight> res = new HashSet<>();
 		for (Flight f: flights){
 			if(f.getSource().equals(a))
@@ -40,7 +40,7 @@ public class ListeDArc extends Graph{
 	@Override
 	// Complexit�: O(N)
 	public boolean sontAdjacents(Airport a1, Airport a2) {
-		//à compléter
+		//TODO
 		for (Flight f: flights){
 			if(f.getSource().equals(a1) && f.getDestination().equals(a2))
 				return true;

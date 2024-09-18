@@ -19,7 +19,7 @@ public class MatriceDAdjacence extends Graph{
 	@Override
 	// Complexit�: ?
 	protected void ajouterSommet(Airport a) {	
-		//� compl�ter
+		//TODO
 		correspondanceAirportIndice.put(a,nbAirport);
 		correspondanceIndiceAirport.put(nbAirport,a);
 		nbAirport++;
@@ -30,7 +30,7 @@ public class MatriceDAdjacence extends Graph{
 	@Override
 	// Complexit�: ?
 	protected void ajouterArc(Flight f) {
-		//� compl�ter
+		//TODO
 		var i = correspondanceAirportIndice.get(f.getSource());
 		var j = correspondanceAirportIndice.get(f.getDestination());
 
@@ -40,7 +40,7 @@ public class MatriceDAdjacence extends Graph{
 	@Override
 	// Complexit�: ?
 	public Set<Flight> arcsSortants(Airport a) {
-		//� compl�ter
+		//TODO
 		int ligne = correspondanceAirportIndice.get(a);
 
 		HashSet<Flight> f = new HashSet<>();
@@ -58,13 +58,10 @@ public class MatriceDAdjacence extends Graph{
 	@Override
 	// Complexit�: ?
 	public boolean sontAdjacents(Airport a1, Airport a2) {
-		// � compl�ter
+		//TODO
 		int i = correspondanceAirportIndice.get(a1);
 		int j = correspondanceAirportIndice.get(a2);
 
 		return matrice[i][j] != null || matrice[j][i] != null;
 	}
-	
-	
-
 }

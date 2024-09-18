@@ -15,14 +15,14 @@ public class ListeDAdjacence extends Graph{
 	@Override
 	// Complexit�: ?
 	protected void ajouterSommet(Airport a) {	
-		//� compl�ter
+		//TODO
 		outputFlights.put(a,new HashSet<>());
 	}
 
 	@Override
 	// Complexité: 0(1)
 	protected void ajouterArc(Flight f) {
-		//à compléter
+		//TODO
 		Set<Flight> airports = outputFlights.get(f.getSource());
 		airports.add(f);
 	}
@@ -30,15 +30,15 @@ public class ListeDAdjacence extends Graph{
 	@Override
 	// Complexité: 0(1)
 	public Set<Flight> arcsSortants(Airport a) {
-		//à compléter
+		//TODO
 		return outputFlights.get(a);
 	}
 
 	@Override
 	// Complexit�: O(2N) --> O(N)
 	public boolean sontAdjacents(Airport a1, Airport a2) {
-		// � compl�ter
-		// On boucle tout les vol sortant de a1
+		//TODO
+		//On boucle tout les vol sortant de a1
 		for (Flight f : outputFlights.get(a1)){
 			if (f.getDestination().equals(a2))
 				return true;
